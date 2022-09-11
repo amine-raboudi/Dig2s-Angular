@@ -1,0 +1,94 @@
+<div style="width:100%; height: 150px; background-color: white;margin-top: 50px;height:  650px;">
+  <div class="row" style="margin-left: 150px;margin-right: 200px;margin-bottom: 50px;width: 80%;">
+    <div class="col-sm-6"
+      style="padding: 5px;background-color: white;margin-top: 20px;border-radius: 5px;">
+      <div class="container">
+        <form #userPost="ngForm" method="post">
+          <h3>
+            Get In Touch!
+          </h3>
+
+          <input type="text" id="name" name="Name" ngModel placeholder="Your Name">
+          <input type="text" id="email" name="mail" ngModel placeholder="Your Email">
+          <input type="text" id="num" name="Number" ngModel placeholder="Your Phone Number">
+
+          <textarea id="message" ngModel rows="4" name="body" placeholder="How can we help you?"></textarea>
+
+          <button (click)="onSubmit(userPost.value)">Send</button>
+
+
+
+        </form>
+
+      </div>
+    </div>
+    <div class="col-sm-6"
+      style="background-color: white;padding: 5px;margin-top: 20px;border-radius: 5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+      <h3 style="text-align: center;margin-top: 10px;">
+        <b> Contact Us</b>
+      </h3>
+      <h5 style="color: rgb(69, 176, 238);margin-top: 40px;margin-left: 40px"><i class="fa fa-map-marker"
+          style="font-size:48px;color:rgb(69, 176, 238);text-align: center;"></i>
+        Parc Technologique EL GHAZALA Ariana 2088,Tunisia</h5>
+      <h5 style="color: rgb(69, 176, 238);margin-top: 40px;margin-left: 40px"> <i class="fa fa-phone"
+          style="font-size:48px;color:rgb(69, 176, 238); text-align: center; "></i>
+        (+216) 55 909 836</h5>
+
+      <h5 style="color: rgb(69, 176, 238);margin-top: 40px;margin-left: 40px"> <i class="fa fa-envelope"
+          style="font-size:48px;color:rgb(69, 176, 238); text-align: center;margin-bottom: 40px; "></i>
+          contact@dig2s.com</h5>
+      <hr style="border: 1px solid rgb(12, 12, 12);">
+      <h3 style="text-align: center;">
+        <b> Follow Us</b>
+      </h3>
+      <div >
+        <a class="btn btn-primary" style="background-color: #3b5998;margin-left: 80px;" href="https://www.facebook.com/DIG2S/?ref=pages_you_manage" role="button"><i
+            class="fab fa-facebook-f"></i></a>
+
+        <!-- Instagram   -->
+        <a class="btn btn-primary" style="background-color: #921732;" href="https://www.instagram.com/digi_smart_solutions/?fbclid=IwAR1MccCNerkLjJ9WlJsZxI8WXf3sknYPMfVB0JHWtRd6MfivyHFDwpSKxIQ" role="button"><i
+            class="fab fa-instagram"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-primary" style="background-color: #dd3939;" href="https://www.google.com/search?q=digismartsolutions&h=52x06k33mh5cdi7ed0pyobzborkaow6nxksq.5d15mfc0i&sxsrf=ALiCzsY4-a5fIRITEnywveS70fXmgN7-Jw%3A1655451448943&source=hp&ei=OC-sYqvAN4SUxc8PsIaR2As&iflsig=AJiK0e8AAAAAYqw9SGxEDKEo47eY8LPlk1QrgpU0XrHe&ved=0ahUKEwirvLic_bP4AhUESvEDHTBDBLsQ4dUDCAc&uact=5&oq=digismartsolutions&gs_lcp=Cgdnd3Mtd2l6EAMyBwgjELACECcyBwgjELACECcyBwgjELACECcyCgguEMcBEK8BEA0yBggAEB4QDTIICAAQHhAIEA0yCAgAEB4QCBANMggIABAeEAgQDTIICAAQHhAIEA06BAgjECc6BggjECcQEzoLCAAQgAQQsQMQgwE6CAguELEDEIMBOggIABCABBCxAzoRCC4QgAQQsQMQgwEQxwEQrwE6CwguEIAEELEDENQCOgUIABCABDoLCC4QgAQQxwEQrwE6BwgAEAoQywE6BAgAEAo6BQgAEMsBOgYIABAeEAo6BAgAEA06BAgAEBM6BQgAEKIEUABYpEBg0URoAHAAeACAAZUBiAGaD5IBBDYuMTKYAQCgAQE&sclient=gws-wiz&fbclid=IwAR3KA03L2kz4Leptt_OMwHgDM7B-iarsDfKN5UbIfZEogISoO8Bv3A0zh0Q#h=52x06k33mh5cdi7ed0pyobzborkaow6nxksq.5d15mfc0i" role="button"><i
+            class="fab fa-google"></i></a>
+
+        
+        
+
+        <!-- Linkedin -->
+        <a class="btn btn-primary" style="background-color: #0082ca;" href="https://www.linkedin.com/company/digi-smart-solutions-dig2s/" role="button"><i
+            class="fab fa-linkedin-in"></i></a>
+
+        
+
+        <!-- Youtube -->
+        <a class="btn btn-primary" style="background-color: #ed302f;" href="https://www.youtube.com/channel/UCKTP-_Ocu1cVhql86-odxqw" role="button"><i
+            class="fab fa-youtube"></i></a>
+
+       
+      
+        
+
+        <!-- Whatsapp -->
+        <a class="btn btn-primary" style="background-color: #25d366;" href="https://api.whatsapp.com/send?phone=21655909836&app=facebook&entry_point=page_cta&fbclid=IwAR0LyQiTHhbh5IEwWRO_49aYwH2xmZ7nqcBkpow7-xZVJCLHf6vPxzeYhAw" role="button"><i
+            class="fab fa-whatsapp"></i></a>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <footer class="bg-dark text-center text-white">
+
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgb(9, 9, 104);">
+      © 2022 Copyright:
+      <h4><a style="color: rgb(92, 190, 194);" href="https://dig2s.com/">Digi Smart Solutions </a>All Rights Reserved
+      </h4>
+    </div>
+    <!-- Copyright -->
+  </footer>

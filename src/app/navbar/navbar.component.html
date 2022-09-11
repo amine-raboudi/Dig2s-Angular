@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgb(9, 9, 104);">
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="container">
+      <a class="navbar-brand"href="#HOME"><img class="img" src="/assets/logo1-removebg-preview.png" ></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      
+    </div>
+
+  </div>
+<div class="col-12">
+  
+  <div class="container">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link "  id="navbarDropdown" role="button" 
+          aria-haspopup="true" aria-expanded="false" href="/HOME#ABOUTUS">
+          ABOUT US
+        </a>
+        
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          PROJECTS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item"  href="/HOME#PROJECTS">PROJECTS</a>
+          <a class="dropdown-item" href="/HOME#APPLICATIONS">APPLICATIONS</a>
+          
+
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          REFERENCES
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/HOME#REFERENCES">REFERENCES</a>
+          <a class="dropdown-item" href="/HOME#PARTNERS">PARTNERS</a>
+          <a class="dropdown-item" href="/HOME#MEDIAS">MEDIAS</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link " href="/HOME#EVENTS" id="navbarDropdown" role="button" 
+          aria-haspopup="true" aria-expanded="false">
+          EVENTS
+        </a>
+        <li class="nav-item dropdown">
+          <a class="nav-link " href="/HOME#CONTACT" id="navbarDropdown" role="button" 
+            aria-haspopup="true" aria-expanded="false">
+            CONTACT 
+          </a>
+        </li>
+      <li>
+        <label class="lang">
+          
+          <select #langselect (change)="translate.use(langselect.value)">
+            <option *ngFor="let lang of translate.getLangs() " value="lang">{{lang}}</option>
+          </select>
+        </label>
+      </li>
+    </ul>
+    <div class="col-12">
+      <div class="container" style="right:100%">
+        
+      </div>
+    </div>
+ 
+   </div>
+
+</div>
+
+
+</nav>
